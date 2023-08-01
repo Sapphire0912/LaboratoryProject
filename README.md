@@ -1,6 +1,8 @@
 # LaboratoryProject 資料夾內容說明
 * [專題展資料](#independent_study)
     * [專題內容快速瀏覽](#study_browser)
+    * [實踐方法](#implement)
+    * [成果展示](#result_present) 
 * [實驗室專案](#lab_project)
     * [G01-SourceCode](#source_code)
     * [N01-API](#api)
@@ -54,13 +56,14 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
 </details>
 
 <details>
-   <summary> 實踐方法 </summary>  
+   <summary id="implement"> 實踐方法 </summary>  
    
-   1. 影像預處理    
-   2. 動態閾值    
-   3. 圖像分割    
-   4. 定義瓣膜位置    
-   5. 左心室肌肉區段語意分析     
+   * 心臟超音波影像  
+   * 影像預處理    
+   * 動態閾值
+   * 圖像分割
+   * 定義瓣膜位置
+   * 左心室肌肉區段語意分析     
 </details>
 
 <details>
