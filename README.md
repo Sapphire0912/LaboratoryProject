@@ -103,7 +103,9 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
 
    [src]: <https://github.com/Sapphire0912/LaboratoryProject/blob/main/N06-Tutorial/Multi-Threshold%20%E6%95%99%E5%AD%B8%E6%96%87%E4%BB%B6.pptx>
    
-   * 圖像分割
+   * 圖像分割  
+&emsp;&emsp;根據Apical four chamber view，我們使用了動態閾值得到了初步腔室的範圍後，為了定義每幀的每個腔室及瓣膜位置，採取了統計的方法。由於在瓣膜打開的時間，瓣膜位置在影像上較模糊，不容易區分心房和心室的範圍，因此我們先統計整個影像的腔室位置，接著再利用機器學習模型訓練，得到每個腔室具體的位置，如圖(八)。
+
    * 定義瓣膜位置
    * 左心室肌肉區段語意分析     
 </details>
