@@ -9,7 +9,7 @@
     * [N05-Release](#release)
     * [N06-Tutorial](#tutorial)
 
-※  
+※ 註：由於實驗室專案的病人資料是和醫生合作取得, 因此在[N03-DevelopmentLog][N03]和[N04-TestReport][N04]僅擺放可以展示的資料  
 -------------------------------------
 
 
