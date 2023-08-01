@@ -65,7 +65,6 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
 
    * 影像預處理  
 &emsp;&emsp;為了可以將影像處理的目標更接近於我們感興趣的區域(即超音波影像區域)。如圖(三)，在一般的超音波影像會有診斷資料、使用哪種模式測量等文字。我們找到超音波影像區域的邊緣後，利用遮罩的方式抓出每幀圖像實質為超音波影像區域的位置，如圖(四)。<br/>
-
 <div align=center>
    
    ![圖(三)心臟超音波影像](https://github.com/Sapphire0912/LaboratoryProject/blob/main/%E5%B0%88%E9%A1%8C%E5%B1%95%E8%B3%87%E6%96%99/image/%E5%BF%83%E8%87%9F%E8%B6%85%E9%9F%B3%E6%B3%A2%E5%BD%B1%E5%83%8F.jpg)
@@ -87,7 +86,18 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
 </div>
 
    * 動態閾值  
-&emsp;&emsp;由於真實患者超音波影像的數據樣本並非像其他數據庫的樣本清晰。在參考資料[2]的做法，使用 Gray Level Symmetric Axis Transform偵測腔室的區域，接著利用 SVM 及 Constellation 對腔室做語意分析。我們則採用動態閾值方法及 distance transform 來偵測腔室區域，首先在心臟範圍及 ROI 的區域內，收集每一幀中每個像素的灰階值並且繪製成直方圖，觀察每幀的灰階值分布如圖(六)、圖(七)。根據每一幀採用不同閾值及參數，以達到區分腔室及肌肉區域。
+&emsp;&emsp;由於真實患者超音波影像的數據樣本並非像其他數據庫的樣本清晰。在參考資料[2]的做法，使用 Gray Level Symmetric Axis Transform偵測腔室的區域，接著利用 SVM 及 Constellation 對腔室做語意分析。我們則採用動態閾值方法及 distance transform 來偵測腔室區域，首先在心臟範圍及 ROI 的區域內，收集每一幀中每個像素的灰階值並且繪製成直方圖，觀察每幀的灰階值分布，如圖(六)、圖(七)。根據每一幀採用不同閾值及參數，以達到區分腔室及肌肉區域。
+<div align=center>
+   
+   ![圖(六) 灰階直方圖](https://github.com/Sapphire0912/LaboratoryProject/blob/main/%E5%B0%88%E9%A1%8C%E5%B1%95%E8%B3%87%E6%96%99/image/%E7%81%B0%E9%9A%8E%E7%9B%B4%E6%96%B9%E5%9C%96.jpg)
+   <center>圖(六) 灰階直方圖</center><br><br/>
+</div>
+
+<div align=center>
+   
+   ![圖(七) 不同幀灰階直方圖](https://github.com/Sapphire0912/LaboratoryProject/blob/main/%E5%B0%88%E9%A1%8C%E5%B1%95%E8%B3%87%E6%96%99/image/%E4%B8%8D%E5%90%8C%E5%B9%80%E7%9A%84%E7%81%B0%E9%9A%8E%E7%9B%B4%E6%96%B9%E5%9C%96.jpg)
+   <center>圖(七) 不同幀灰階直方圖</center>
+</div>
 
    * 圖像分割
    * 定義瓣膜位置
