@@ -14,4 +14,8 @@
 * * *  
 
 <h2 id="independent_study">專題展資料</h2>  
-題目：心臟超音波影像之肌肉語意區段偵測與腔室範圍估計改良
+題目：心臟超音波影像之肌肉語意區段偵測與腔室範圍估計改良<br/>
+<details>
+   <summary>摘要</summary>
+   pass
+</details>
