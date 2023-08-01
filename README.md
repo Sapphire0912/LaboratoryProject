@@ -90,8 +90,17 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
 
 <details>
    <summary> 結論與未來展望 </summary>
+
+   * 結論  
+&emsp;&emsp;我們正在構建一個全自動且可擴展的心臟超音波影像分析系統，其中包含圖像分割、辨識 View 和結構測量，分析包括心房、心室和心肌在內的心臟部分，以及彩色都卜勒診斷血液是否逆流。列出這些心臟結構的量測值，輔助醫生收集所有的症狀，例如：二尖瓣閉鎖不全、三尖瓣閉鎖不全、主動脈閉鎖不全、左心室舒張期受損(心臟衰竭)等。<br><br/>
+   * 未來展望  
+&emsp;&emsp;目前我們最優先的目標是計算左心室射血分數來評估心臟功能是否正常。由於醫生在評估心臟功能時，不會只看患者的其中一個 View 就直接做診斷，還會採取 apical long axis、apical two chamber。為了更接近醫生診斷的結果，因此接下來會分析上述 View。近年來，醫學有較新的診斷左心室功能的技術，global longitudinal strain，此項技術在超音波影像上，除了需要做肌肉區段的語意分析外，也需要計算心臟在收縮及舒張時的收縮率，未來會朝著該方向繼續發展。
 </details>
 
 <details>
    <summary> 參考資料 </summary>
+   
+   [1]	https://www.ahajournals.org/doi/epub/10.1161/CIRCULATIONAHA.118.034338  
+   [2]	S. Ebadollahi; Shih-Fu Chang; H. Wu (2004, July). Automatic View Recognition in Echocardiogram Videos using Parts-Based Representation. Proceedings of the 2004 IEEE Computer Society Conference on Computer Vision and Pattern Recognition, 2004. CVPR 2004, Washington, DC, USA.  
+   [3]	https://dicom.innolitics.com/ciods/us-image  
 </details>
