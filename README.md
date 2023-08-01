@@ -37,7 +37,20 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
 </details>
 
 <details>
-   <summary> 工作流程 </summary>
+   <summary> 工作流程 & 系統架構 </summary>
+
+&emsp;&emsp;主要流程分別分為醫院、醫生和系統。關於此系統，我們使用計算機視覺的演算法對心臟結構進行分類並分析測量結果。與其他系統的不同之處在於，我們並沒有使用來自其他資料庫的樣本，而是從醫生獲取患者的心臟超音波影像，真實患者的超音波影像並不像其他資料庫的樣本清晰，我們希望此系統能夠為患者帶來更低的成本，使得可以負擔起個人數據採集和跟蹤系統。
+ 
+<div align=center>
+   
+   ![圖(一)工作流程圖](https://github.com/Sapphire0912/LaboratoryProject/blob/main/%E5%B0%88%E9%A1%8C%E5%B1%95%E8%B3%87%E6%96%99/image/%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%E5%9C%96.jpg)
+   <center>圖 (一) 工作流程圖</center><br><br/>
+   
+<div align=center>
+   
+   ![圖(二)系統架構圖](https://github.com/Sapphire0912/LaboratoryProject/blob/main/%E5%B0%88%E9%A1%8C%E5%B1%95%E8%B3%87%E6%96%99/image/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E5%9C%96.jpg)
+   <center>圖 (二) 系統架構圖</center>
+   
 </details>
 
 <details>
