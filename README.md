@@ -99,6 +99,10 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
    <center>圖(七) 不同幀灰階直方圖</center>
 </div>
 
+   ※ 註：詳細的演算法計算在 [N06-Tutorial Multi-Threshold 教學文件][src]
+
+   [src]: <https://github.com/Sapphire0912/LaboratoryProject/blob/main/N06-Tutorial/Multi-Threshold%20%E6%95%99%E5%AD%B8%E6%96%87%E4%BB%B6.pptx>
+   
    * 圖像分割
    * 定義瓣膜位置
    * 左心室肌肉區段語意分析     
