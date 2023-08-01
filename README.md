@@ -13,7 +13,7 @@
     * [N06-Tutorial](#tutorial)
 
 
-※ 註：實驗室專案的資料是由校方教師和醫生合作取得, 具有保密協定。因此在 N03-DevelopmentLog、N04-TestReport 僅擺放允許展示的資料。
+※ 註：實驗室專案的資料是由校方教師和醫生合作取得，具有保密協定。因此在 N03-DevelopmentLog、N04-TestReport 僅擺放允許展示的資料。
 * * *  
 
 <h2 id="independent_study"><br>專題展資料<br/>專題題目: 心臟超音波影像之肌肉語意區段偵測與腔室範圍估計改良</h2> 
@@ -57,11 +57,27 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
 
 <details>
    <summary id="implement"> 實踐方法 </summary>  
-   
+
+**※ 註：每個超音波原始圖像的大小為 800 * 600 pixel**
+
    * 心臟超音波影像敘述  
 &emsp;&emsp;心臟超音波已是醫生常用來檢查心臟相關疾病的工具，利用超音波探測物體的距離及大小。在診斷期間，將超音波的探頭放置在患者胸部上方並發射音波，接觸到心臟再反射由探頭接收，進而描繪心臟的影像。心臟超音波通常與都卜勒超音波和彩色都卜勒結合，以評估通過心臟瓣膜的血流。經過不同角度的超音波檢查，可以提供血管及各部分構造更詳細的資訊，可以檢視心臟的大小、收縮情形，進而評估心臟功能是否正常。不同角度的超音波又稱為 View，每個 View 會根據超音波探頭的位置和穿過心臟斷層平面的方向來定義名稱。我們常用的有五種 view，分別是 parasternal long axis、parasternal short axis、apical four chamber、apical two chamber 和 apical long axis。<br><br/>
+
    * 影像預處理  
-&emsp;&emsp;為了可以將影像處理的目標更接近於我們感興趣的區域(即超音波影像區域)，在一般的超音波影像圖(三)會有診斷資料、使用哪種模式測量等文字。我們找到超音波影像區域的邊緣後，利用遮罩的方式抓出每幀圖像實質為超音波影像區域的位置。
+&emsp;&emsp;為了可以將影像處理的目標更接近於我們感興趣的區域(即超音波影像區域)。如圖(三)，在一般的超音波影像會有診斷資料、使用哪種模式測量等文字。我們找到超音波影像區域的邊緣後，利用遮罩的方式抓出每幀圖像實質為超音波影像區域的位置，如圖(四)。<br/>
+
+<div align=center>
+   
+   ![圖(三)心臟超音波影像](https://github.com/Sapphire0912/LaboratoryProject/blob/main/%E5%B0%88%E9%A1%8C%E5%B1%95%E8%B3%87%E6%96%99/image/%E5%BF%83%E8%87%9F%E8%B6%85%E9%9F%B3%E6%B3%A2%E5%BD%B1%E5%83%8F.jpg)
+   <center>圖(三)心臟超音波影像</center><br><br/>
+</div>
+
+<div align=center>
+   
+   ![圖(四) ROI 範圍](https://github.com/Sapphire0912/LaboratoryProject/blob/main/%E5%B0%88%E9%A1%8C%E5%B1%95%E8%B3%87%E6%96%99/image/ROI%20%E7%AF%84%E5%9C%8D.jpg)
+   <center>圖(四) ROI 範圍</center>
+</div>
+
    * 動態閾值
    * 圖像分割
    * 定義瓣膜位置
@@ -74,8 +90,17 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
 
 <details>
    <summary> 結論與未來展望 </summary>
+
+   * 結論  
+&emsp;&emsp;我們正在構建一個全自動且可擴展的心臟超音波影像分析系統，其中包含圖像分割、辨識 View 和結構測量，分析包括心房、心室和心肌在內的心臟部分，以及彩色都卜勒診斷血液是否逆流。列出這些心臟結構的量測值，輔助醫生收集所有的症狀，例如：二尖瓣閉鎖不全、三尖瓣閉鎖不全、主動脈閉鎖不全、左心室舒張期受損(心臟衰竭)等。<br><br/>
+   * 未來展望  
+&emsp;&emsp;目前我們最優先的目標是計算左心室射血分數來評估心臟功能是否正常。由於醫生在評估心臟功能時，不會只看患者的其中一個 View 就直接做診斷，還會採取 apical long axis、apical two chamber。為了更接近醫生診斷的結果，因此接下來會分析上述 View。近年來，醫學有較新的診斷左心室功能的技術，global longitudinal strain，此項技術在超音波影像上，除了需要做肌肉區段的語意分析外，也需要計算心臟在收縮及舒張時的收縮率，未來會朝著該方向繼續發展。
 </details>
 
 <details>
    <summary> 參考資料 </summary>
+   
+   [1]	https://www.ahajournals.org/doi/epub/10.1161/CIRCULATIONAHA.118.034338  
+   [2]	S. Ebadollahi; Shih-Fu Chang; H. Wu (2004, July). Automatic View Recognition in Echocardiogram Videos using Parts-Based Representation. Proceedings of the 2004 IEEE Computer Society Conference on Computer Vision and Pattern Recognition, 2004. CVPR 2004, Washington, DC, USA.  
+   [3]	https://dicom.innolitics.com/ciods/us-image  
 </details>
