@@ -12,7 +12,3 @@
 ※ 註：由於實驗室專案的病人資料是和醫生合作取得, 因此在 N03-DevelopmentLog、N04-TestReport 僅擺放可以展示的資料  
 * * *  
 
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
