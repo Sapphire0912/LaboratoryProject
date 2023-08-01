@@ -31,7 +31,7 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
 </details>
 
 <details>
-   <summary> 工作流程 & 系統架構 </summary>
+   <summary> 工作流程 </summary>
 </details>
 
 <details>
