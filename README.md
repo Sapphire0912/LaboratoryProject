@@ -48,7 +48,7 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
    
 <div align=center>
    
-   ![圖(二)系統架構圖](https://github.com/Sapphire0912/LaboratoryProject/blob/main/%E5%B0%88%E9%A1%8C%E5%B1%95%E8%B3%87%E6%96%99/image/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B%E5%9C%96.jpg)
+   ![圖(二)系統架構圖]()
    <center>圖 (二) 系統架構圖</center>
    
 </details>
