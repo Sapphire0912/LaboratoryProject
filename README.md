@@ -140,8 +140,24 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
 <details>
    <summary id="result_present"> 成果展示 </summary>
    ※ 註：在這裡直接展示結果影片
-      
+<div align=center>
+   
+   ![segment_case_00004042](https://github.com/Sapphire0912/LaboratoryProject/blob/main/%E5%B0%88%E9%A1%8C%E5%B1%95%E8%B3%87%E6%96%99/image/Segment/00004042_110428_0999.gif)
+   <center>Case 1 圖像分割(腔室語意分析)</center><br><br/>
 
+   ![valve_case_00004042](https://github.com/Sapphire0912/LaboratoryProject/blob/main/%E5%B0%88%E9%A1%8C%E5%B1%95%E8%B3%87%E6%96%99/image/Segment/Valve_00004042_110428_0999.gif)
+   <center>Case 1 定義二尖瓣支點</center><br><br/>
+
+   ![segment_case_001125171](https://github.com/Sapphire0912/LaboratoryProject/blob/main/%E5%B0%88%E9%A1%8C%E5%B1%95%E8%B3%87%E6%96%99/image/Segment/01125171_090942_0090.gif)
+   <center>Case 2 圖像分割(腔室語意分析)</center><br><br/>
+
+   ![valve_case_001125171](https://github.com/Sapphire0912/LaboratoryProject/blob/main/%E5%B0%88%E9%A1%8C%E5%B1%95%E8%B3%87%E6%96%99/image/Segment/Valve_01125171_090942_0090.gif)
+   <center>Case 2 定義二尖瓣支點</center><br><br/>
+
+   ![muscle_semantic](https://github.com/Sapphire0912/LaboratoryProject/blob/main/%E5%B0%88%E9%A1%8C%E5%B1%95%E8%B3%87%E6%96%99/image/Muscle%20Sematic/00004042_110428_0999.gif)
+   <center>Case 1 左心室肌肉語意分析</center><br><br/>
+   
+</div>
 </details>
 
 <details>
