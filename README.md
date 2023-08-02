@@ -138,7 +138,10 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
 </details>
 
 <details>
-   <summary> 成果展示 </summary>
+   <summary id="result_present"> 成果展示 </summary>
+   ※ 註：在這裡直接展示結果影片
+      
+
 </details>
 
 <details>
