@@ -121,6 +121,19 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
 
    * 左心室肌肉區段語意分析  
 &emsp;&emsp;根據 Apical four chamber view的心臟結構以及醫學對於左心室上肌肉區段的定義如圖(十)，主要有六個區段 basal septal、septal、apical septal、apical lateral、lateral 和 basal lateral。我們利用二尖瓣位置和動態閾值方法，將超音波影像中左心室肌肉區域和醫學定義的位置做匹配，接著將每個區段重新取樣，得到結果如圖(十一)。
+<div align=center>
+   
+   ![圖(十) A4C 模型圖](https://github.com/Sapphire0912/LaboratoryProject/blob/main/%E5%B0%88%E9%A1%8C%E5%B1%95%E8%B3%87%E6%96%99/image/Apical%20Four%20Chamber%20%E6%A8%A1%E5%9E%8B%E5%9C%96.jpg)
+   <center>圖(十) Apical Four Chamber 模型圖</center><br><br/>
+</div>
+
+綠點為 apical septal、藍點為 septal、紅點為 basal septal、天空藍點為 apical lateral、黃點為 lateral、粉色點為 basal lateral。
+
+<div align=center>
+  
+   ![圖(十一) 左心室肌肉區段語意分析圖](https://github.com/Sapphire0912/LaboratoryProject/blob/main/%E5%B0%88%E9%A1%8C%E5%B1%95%E8%B3%87%E6%96%99/image/%E5%B7%A6%E5%BF%83%E5%AE%A4%E8%82%8C%E8%82%89%E5%8D%80%E6%AE%B5%E8%AA%9E%E6%84%8F%E5%88%86%E6%9E%90%E5%9C%96.jpg)
+   <center>圖(十一) 左心室肌肉區段語意分析圖</center>
+</div>
 
 </details>
 
