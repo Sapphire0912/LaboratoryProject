@@ -113,6 +113,11 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
 
    * 定義瓣膜位置  
 &emsp;&emsp;利用骨架圖以及腔室語意分析的結果，定義二尖瓣位置。我們採用基於規則的做法，初步定義二尖瓣支點的位置，如圖(九)，限制了左心室(Left Ventricle)的範圍，以供計算左心室射血分數(Left Ventricular Ejection Fraction)以及定義左心室肌肉區段的語意分析使用。
+<div align=center>
+   
+   ![圖(九) 定義二尖瓣支點](https://github.com/Sapphire0912/LaboratoryProject/blob/main/%E5%B0%88%E9%A1%8C%E5%B1%95%E8%B3%87%E6%96%99/image/%E5%AE%9A%E7%BE%A9%E4%BA%8C%E5%B0%96%E7%93%A3%E6%94%AF%E9%BB%9E.jpg)
+   <center>圖(九) 定義二尖瓣支點</center><br><br/>
+</div>
 
    * 左心室肌肉區段語意分析     
 </details>
