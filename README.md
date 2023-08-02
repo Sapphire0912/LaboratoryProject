@@ -140,8 +140,8 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
 <details>
    <summary id="result_present"> 成果展示 </summary>
    ※ 註：在這裡直接展示結果影片
-   
-   > ![Segment_case_00004042](https://github.com/Sapphire0912/LaboratoryProject/blob/main/N04-TestReport/Segment/00004042_110428_0999.avi)
+      
+
 </details>
 
 <details>
