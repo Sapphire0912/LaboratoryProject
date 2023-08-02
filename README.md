@@ -104,7 +104,7 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
    [src]: <https://github.com/Sapphire0912/LaboratoryProject/blob/main/N06-Tutorial/Multi-Threshold%20%E6%95%99%E5%AD%B8%E6%96%87%E4%BB%B6.pptx>
    
    * 圖像分割  
-&emsp;&emsp;根據Apical four chamber view，我們使用了動態閾值得到了初步腔室的範圍後，為了定義每幀的每個腔室及瓣膜位置，採取了統計的方法。由於在瓣膜打開的時間，瓣膜位置在影像上較模糊，不容易區分心房和心室的範圍，因此我們先統計整個影像的腔室位置，接著再利用機器學習模型訓練，得到每個腔室具體的位置，如圖(八)。
+&emsp;&emsp;根據 Apical four chamber view，我們使用了動態閾值得到了初步腔室的範圍後，為了定義每幀的每個腔室及瓣膜位置，採取了統計的方法。由於在瓣膜打開的時間，瓣膜位置在影像上較模糊，不容易區分心房和心室的範圍，因此我們先統計整個影像的腔室位置，接著再利用機器學習模型訓練，得到每個腔室具體的位置，如圖(八)。
 <div align=center>
    
    ![圖(八) 腔室語意分析](https://github.com/Sapphire0912/LaboratoryProject/blob/main/%E5%B0%88%E9%A1%8C%E5%B1%95%E8%B3%87%E6%96%99/image/%E8%85%94%E5%AE%A4%E8%AA%9E%E6%84%8F%E5%88%86%E6%9E%90.jpg)
@@ -119,7 +119,9 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
    <center>圖(九) 定義二尖瓣支點</center><br><br/>
 </div>
 
-   * 左心室肌肉區段語意分析     
+   * 左心室肌肉區段語意分析  
+&emsp;&emsp;根據 Apical four chamber view的心臟結構以及醫學對於左心室上肌肉區段的定義如圖(十)，主要有六個區段 basal septal、septal、apical septal、apical lateral、lateral 和 basal lateral。我們利用二尖瓣位置和動態閾值方法，將超音波影像中左心室肌肉區域和醫學定義的位置做匹配，接著將每個區段重新取樣，得到結果如圖(十一)。
+
 </details>
 
 <details>
