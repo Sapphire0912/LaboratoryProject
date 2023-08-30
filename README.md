@@ -16,8 +16,7 @@
 ※ 註：實驗室專案的資料是由校方教師和醫生合作取得，具有保密協定。因此在 N03-DevelopmentLog、N04-TestReport 僅擺放允許展示的資料。
 * * *  
 
-[#source_code]: <https://github.com/Sapphire0912/LaboratoryProject/tree/main/G01-SourceCode>
-
+<a href="https://github.com/Sapphire0912/LaboratoryProject/tree/main/G01-SourceCode" id="source_code">
 <h2 id="independent_study"><br>專題展資料<br/>專題題目: 心臟超音波影像之肌肉語意區段偵測與腔室範圍估計改良</h2> 
 <h3 id="study_browser"> 專題內容快速瀏覽 </h3>
 <details>
