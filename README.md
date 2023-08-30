@@ -251,7 +251,36 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
          <p><b>－</b>新增基本輸入輸出模組 FileIO.py、控制流程及參數的ProcessesCtrl.py 模組</p>
          <p><b>－</b>完成系統架構 (v1.0)</p>
     </details>
-        <details>
+     <details>
        <summary>2022</summary>
+
+       * 2022.01
+         <p><b>－</b>設計 Apical Four Chamber view 肌肉區域的演算法</p>
+         <p><b>－</b>調整 Multi Threshold 中的參數設定</p>
+       * 2022.02
+         <p><b>－</b>利用 BFS 和 Connected component labeling 實現 Apical Four Chamber view 肌肉區域的演算法</p>
+         <p><b>－</b>基於 Apical Four Chamber view 的 K-means 結果、標準模型的關係，實現定義肌肉特徵點</p>
+       * 2022.03
+         <p><b>－</b>完成 MuscleSampling.py 模組</p>
+         <p><b>－</b>新增可調整 Multi Threshold 階數的參數</p>
+       * 2022.04
+         <p><b>－</b>整理系統架構(v1.1)、進行單元測試</p>
+         <p><b>－</b>開發 Global Longitudinal Strain 演算法</p>
+         <p><b>－</b>利用 E/A Ratio 定義心臟週期</p>
+       * 2022.05
+         <p><b>－</b>完成系統架構(v1.1) 的專案管理</p>
+         <p><b>－</b>完成 A4CGLS.py 模組</p>
+       * 2022.06
+         <p><b>－</b>統計 LVEF 醫生診斷資料</p>
+         <p><b>－</b>完成 CalLVEF.py、IOU_LVEF.py 模組</p>
+         <p><b>－</b>新增系統架構(v1.1) 專案管理中的測試數據及資料</p>
+       * 2022.08
+         <p><b>－</b>交接實驗室專案(v1.1)</p>
+         <p><b>－</b>完成系統架構(v2.0) 的系統整合</p>   
+       * 2022.12
+         <p><b>－</b>完成系統架構(v2.0) 的模組整合</p>
+         <p><b>－</b>完成當前模組的單元測試</p>
+         <p><b>－</b>完成 API 文件 v1.0 </p>
+         <p><b>－</b>交接實驗室專案 (v2.0)</p>
     </details>
   * 問題紀錄
