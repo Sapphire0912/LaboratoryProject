@@ -5,18 +5,16 @@
     * [成果展示](#result_present) 
 * [實驗室專案](#lab_project)
     * [G01-SourceCode](https://github.com/Sapphire0912/LaboratoryProject/tree/main/G01-SourceCode#source_code)
-    * [N01-API](#api)
-    * [N02-Architecture](#architecture)
-    * [N03-DevelopmentLog](#develop_log)
-    * [N04-TestReport](#test_report)
-    * [N05-Release](#release)
-    * [N06-Tutorial](#tutorial)
+    * [N01-API](https://github.com/Sapphire0912/LaboratoryProject/tree/main/N01-API#api)
+    * [N02-Architecture](https://github.com/Sapphire0912/LaboratoryProject/tree/main/N02-Architecture#architecture)
+    * [N03-DevelopmentLog](https://github.com/Sapphire0912/LaboratoryProject/tree/main/N03-DevelopmentLog#develop_log)
+    * [N04-TestReport](https://github.com/Sapphire0912/LaboratoryProject/tree/main/N04-TestReport#test_report)
+    * [N05-Release](https://github.com/Sapphire0912/LaboratoryProject/tree/main/N05-Release#release)
+    * [N06-Tutorial](https://github.com/Sapphire0912/LaboratoryProject/tree/main/N06-Tutorial#tutorial)
 
 
 ※ 註：實驗室專案的資料是由校方教師和醫生合作取得，具有保密協定。因此在 N03-DevelopmentLog、N04-TestReport 僅擺放允許展示的資料。
 * * *  
-
-<h2 id="source_code" style="display:none;"></h2>
 
 <h2 id="independent_study"><br>專題展資料<br/>專題題目: 心臟超音波影像之肌肉語意區段偵測與腔室範圍估計改良</h2> 
 <h3 id="study_browser"> 專題內容快速瀏覽 </h3>
@@ -178,3 +176,17 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
    [2]	S. Ebadollahi; Shih-Fu Chang; H. Wu (2004, July). Automatic View Recognition in Echocardiogram Videos using Parts-Based Representation. Proceedings of the 2004 IEEE Computer Society Conference on Computer Vision and Pattern Recognition, 2004. CVPR 2004, Washington, DC, USA.  
    [3]	https://dicom.innolitics.com/ciods/us-image  
 </details>
+
+* * *  
+
+<h2 id="lab_project">實驗室專案內容</h2>
+
+  - [x] G01: 心臟影像的程式碼
+  - [x] N01: 心臟影像 API 文件   
+  - [x] N02: 心臟影像架構圖  
+  - [x] N03: 進度報告    
+  - [x] N04: 實作結果   
+  - [x] N05: 參考論文 & 資料  
+  - [x] N06: 教學文件
+
+* 專案內容快速瀏覽
