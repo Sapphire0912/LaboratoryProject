@@ -189,4 +189,98 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
   - [x] N05: 參考論文 & 資料  
   - [x] N06: 教學文件
 
+
 * 專案內容快速瀏覽
+  * 專案目標
+    * 建構一個系統輔助醫生診斷特定疾病
+    * 根據不同 view ，分析該 view 在醫學上可診斷的資訊
+    * 優先計算 Apical four chamber view 的 LVEF
+
+  * 系統架構 (v2.0)
+    ![系統架構圖](https://github.com/Sapphire0912/LaboratoryProject/blob/main/N02-Architecture/%E7%B3%BB%E7%B5%B1%E6%9E%B6%E6%A7%8B.PNG)
+    
+  * 模組列表
+  1. 流程控制/檔案輸入輸出  
+       * Main.py
+       * ProcessesCtrl.py
+       * FileIO.py 
+  2. 轉檔/影像處理 & 計算模組
+       * DCMToAVI.py
+       * Preprocessing.py
+       * A4CSegmentation.py
+       * MultiThreshold.py
+       * CalLVEF.py
+       * IOU_LVEF.py
+  3. 待開發 & 測試模組
+       * MuscleSampling.py
+       * A4CGLS.py
+      
+  * 專案進度統整
+    <details>
+       <summary>2021</summary>
+       
+       * 2021.05  
+          <p><b>－</b> 完成 dicom 檔轉成 .avi 和 .png 程式</p>   
+          <p><b>－</b> 設計分類 9 種不同 view 的分類器</p>
+       * 2021.06
+         <p><b>－</b> 完成分類 9 種不同 view 的分類器</p>
+         <p><b>－</b> 優化分類器程式的執行時間</p>
+       * 2021.07
+          <p><b>－</b>優化骨架化程式執行時間</p>
+          <p><b>－</b>處理含有 Doppler 效應的資料集</p>
+          <p><b>－</b>還原有 Doppler 效應的影像</p>
+       * 2021.08
+         <p><b>－</b>利用 Matching 演算法處理 Parasternal Long Axis view</p>
+         <p><b>－</b>完成抓取影像 ROI 區域程式</p>
+       * 2021.09
+         <p><b>－</b>修正 Doppler 演算法、視覺化結果</p>
+         <p><b>－</b>開發 Parasternal Long Axis M-Mode 演算法</p>
+       * 2021.11
+         <p><b>－</b>完成 DCMToAVI.py 模組</p>
+         <p><b>－</b>處理心臟週期</p>
+         <p><b>－</b>設計 Multi Threshold 演算法</p>
+         <p><b>－</b>設計 Apical Four Chamber view 抓取二尖瓣位置的演算法</p>
+       * 2021.12
+         <p><b>－</b>優化 Multi Threshold 演算法(部分以C語言實現)</p>
+         <p><b>－</b>調整 Multi Threshold 中 histogram 的計算方式</p>
+         <p><b>－</b>完成 MultiThreshold.py 模組</p>
+         <p><b>－</b>修正 Apical Four Chamber view 抓取二尖瓣位置中的K-means 的分群問題</p>
+         <p><b>－</b>調整 Apical Four Chamber view 預測腔室位置的演算法</p>
+         <p><b>－</b>調整 Apical Four Chamber view 抓取二尖瓣瓣膜的演算法</p>
+         <p><b>－</b>整合 ROI 區域程式、骨架化程式為 Preprocessing.py 模組</p>
+         <p><b>－</b>新增基本輸入輸出模組 FileIO.py、控制流程及參數的ProcessesCtrl.py 模組</p>
+         <p><b>－</b>完成系統架構 (v1.0)</p>
+    </details>
+     <details>
+       <summary>2022</summary>
+
+       * 2022.01
+         <p><b>－</b>設計 Apical Four Chamber view 肌肉區域的演算法</p>
+         <p><b>－</b>調整 Multi Threshold 中的參數設定</p>
+       * 2022.02
+         <p><b>－</b>利用 BFS 和 Connected component labeling 實現 Apical Four Chamber view 肌肉區域的演算法</p>
+         <p><b>－</b>基於 Apical Four Chamber view 的 K-means 結果、標準模型的關係，實現定義肌肉特徵點</p>
+       * 2022.03
+         <p><b>－</b>完成 MuscleSampling.py 模組</p>
+         <p><b>－</b>新增可調整 Multi Threshold 階數的參數</p>
+       * 2022.04
+         <p><b>－</b>整理系統架構(v1.1)、進行單元測試</p>
+         <p><b>－</b>開發 Global Longitudinal Strain 演算法</p>
+         <p><b>－</b>利用 E/A Ratio 定義心臟週期</p>
+       * 2022.05
+         <p><b>－</b>完成系統架構(v1.1) 的專案管理</p>
+         <p><b>－</b>完成 A4CGLS.py 模組</p>
+       * 2022.06
+         <p><b>－</b>統計 LVEF 醫生診斷資料</p>
+         <p><b>－</b>完成 CalLVEF.py、IOU_LVEF.py 模組</p>
+         <p><b>－</b>新增系統架構(v1.1) 專案管理中的測試數據及資料</p>
+       * 2022.08
+         <p><b>－</b>交接實驗室專案(v1.1)</p>
+         <p><b>－</b>完成系統架構(v2.0) 的系統整合</p>   
+       * 2022.12
+         <p><b>－</b>完成系統架構(v2.0) 的模組整合</p>
+         <p><b>－</b>完成當前模組的單元測試</p>
+         <p><b>－</b>完成 API 文件 v1.0 </p>
+         <p><b>－</b>交接實驗室專案 (v2.0)</p>
+    </details>
+  * 問題紀錄
