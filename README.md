@@ -214,7 +214,9 @@ _**我們採用基於規則的系統，針對心臟的每個部份進行分類�
   3. 待開發 & 測試模組
        * MuscleSampling.py
        * A4CGLS.py
-      
+         
+       ※ 註：詳細的內容可直接看程式碼或 [N01-API](https://github.com/Sapphire0912/LaboratoryProject/tree/main/N01-API#api) 文件
+   
   * 專案進度統整
     <details>
        <summary>2021</summary>
